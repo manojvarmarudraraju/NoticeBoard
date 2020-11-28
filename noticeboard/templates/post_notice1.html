@@ -1,0 +1,9 @@
+{% include 'base.html' %}
+
+<form method="POST">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button type="submit">post_notice1</button>
+</form>
+
+{% include 'footer.html' %}

@@ -1,0 +1,14 @@
+{% include 'base.html' %}
+
+<form method="POST">
+{% csrf_token %}
+    <table>
+        <tr><td>Name:</td><td><input type="text" name="names"></td></tr>
+        <tr><td>Email:</td><td><input type="text" name="email"></td></tr>
+        <tr><td>QUERY:</td><td><input type="text" name="query">
+    </td></tr>
+
+        <tr><td><button type="submit">SUBMIT</button></td></tr>
+    </table> </form>
+
+{% include 'footer.html' %}

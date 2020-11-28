@@ -1,0 +1,10 @@
+
+{% include 'base.html' %}
+
+<table>
+{% for i in notice %}
+    <tr><td><a href="{% url 'view' i.id%}">{{i.notice}}</a></td></tr>
+{% endfor %}
+</table>
+
+{% include 'footer.html' %}

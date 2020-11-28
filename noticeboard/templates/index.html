@@ -1,0 +1,13 @@
+{% load static %}
+{% include 'base.html' %}
+
+<center>
+    <a href="{% url 'post_notice1' %}"><button type="button" ><font size=5% >post_notice</font></button></a>
+       <a href="{% url 'view_notice' %}"><button type="button" ><font size=5%>view_notice</font></button> </a>
+</center>
+<!--<img src="{% static 'gif.gif' %}" alt="data" style="width:100%;height:50%;">
+<img src="{% static 'gif1.gif' %}" alt="data" style="width:100%;height:50%;">
+<!--<img src="{% static 'image.jpg' %}" alt="plain color" width="500" height="600" >-->
+
+
+{% include 'footer.html' %}
